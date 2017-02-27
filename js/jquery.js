@@ -38,32 +38,33 @@ $(document).ready(function(){
 
 // audio icon
 
-  $('#facebookIcon-inn2').click(function(){
-
-
-    if ( $('#facebookIcon-inn2').height() == 29 ){
-        
-        $('#facebookIcon-inn2').css('background-image', "url(img/on.png)");
-
-        $('#facebookIcon-inn2').css('height', "28px");
-
-        $('#icon-audio').trigger('play');
-      
-    }
-    else{
+//  $('#facebookIcon-inn2').click(function(){
+//
+//
+//    if ( $('#facebookIcon-inn2').height() == 29 ){
+//        
+//        $('#facebookIcon-inn2').css('background-image', "url(img/on.png)");
+//
+//        $('#facebookIcon-inn2').css('height', "28px");
+//
+//        $('#icon-audio').trigger('play');
+//     
+//    }
+//    else{
 
         $('#facebookIcon-inn2').css('background-image', "url(img/off.png)");
 
         $('#facebookIcon-inn2').css('height', "29px");
 
         $('#icon-audio').trigger('pause');   
-
-      }
-  });
+//
+//      }
+//  });
 
 //final audio icon
 
 // video mute
+
 
   $("#covideo").click( function (){
     if( $("#bgvid").prop('muted') )

@@ -121,11 +121,6 @@ $(window).resize(function(){
 
     $('.cosala-img').css('height', cosalaImgHeight + "px");
     $('.cosala-img').css('width', cosalaImgWidth + "px");
-
-
- 	
-
-
 });
 
 //Resizing end

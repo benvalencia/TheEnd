@@ -135,12 +135,17 @@
         <h2>RESERVAS</h2>
         <div class="section-four__box-one">
         <div class="section-four__form">
-            <form action="" method="post">
+            <form id="section-four__form-container" onsubmit="event.preventDefault();">
                 <input type="text" name="InputName" id="inputName" placeholder="Nombre" autocomplete="on" required/><br>
                 <input type="email" name="InputEmail" id="inputEmail" placeholder="Email" autocomplete="on" required/><br>
                 <textarea name="InputMessage" id="inputMessage" rows="10" placeholder="Mensaje" autocomplete="off"></textarea><br>
-                <button type="submit" name="submit" id="coreservasButton">Enviar</button>
+                <button name="submit" id="coreservasButton">Enviar</button>
             </form>
+            <div class="message-sent" id="message-form">
+                Thank you for contact us!
+                <br>
+                We will get back to you as soon as possible.
+            </div>
         </div>
         <div class="section-four__info">
             <h3>THE END</h3>
@@ -171,5 +176,7 @@
             &copy TheEnd All rights reserved
         </div>           
     </footer>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
 </body>
 </html>

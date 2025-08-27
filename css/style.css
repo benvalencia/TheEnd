@@ -344,6 +344,10 @@ h2{
 .section-four__form>form{
   text-align: center;
 }
+.message-sent {
+  display: none;
+}
+
 .section-four__info{
   float: right;
 }

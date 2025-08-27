@@ -65,6 +65,12 @@ $(document).ready(function(){
 
 // video mute
 
+  $("#coreservasButton").on('click', () => {
+    if ($("#inputName").val().toString().trim() && $("#inputEmail").val().toString().trim()) {
+      $("#section-four__form-container").hide();
+      $("#message-form").show();
+    }
+  })
 
   $("#covideo").click( function (){
     if( $("#bgvid").prop('muted') )
@@ -80,11 +86,6 @@ $(document).ready(function(){
 
 //final video mute
 });
-
- 	
-
-
-
 
 $(window).resize(function(){
 	
@@ -149,9 +150,7 @@ $('section[data-type="background"]').each(function(){
 
 //window scroll up ends
 
-// Slidshow 
-
-
+// Slidshow
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -166,16 +165,8 @@ $(function() {
     }
   });
 });
-
-// Slidshow ends
-
 // Add Classes on scrolldown
-
-
-$(window).scroll(function() {    
-
-
-
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var videoHeight = $('#covideo').height();
     var salaHeight = $('#cosala-marker').outerHeight();
@@ -191,19 +182,13 @@ $(window).scroll(function() {
 
 
     if (scroll >= 1) {
-
       $("#cosala-marker").addClass("cosalaok");
-       
     }
     if(scroll >= videoHeight){
-
         $(".coevento-img").addClass("coevento-img-ok");
-
     }
     if(scroll >= menuTop){
-
         $(".coreservas").addClass("corservas-ok");
-
     }
 });
 
